@@ -14,5 +14,10 @@ public class VidyadharService {
 		
 		return studentRepo.save(student);
 	}
+	
+	public Student getStudent(int id) {
+		return studentRepo.findById(id).orElse(null);
+	}
+	
 
 }
